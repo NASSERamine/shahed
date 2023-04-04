@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="900.0" style="-fx-background-image: #FFFFFF;" stylesheets="@../../../../java/CssStyle/MainUserInterfacestyle.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fx:id="logo" fitHeight="145.0" fitWidth="234.0" layoutX="344.0" layoutY="81.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="C:\Users\hp\eclipse-workspace\Sahed\src\main\java\Image\logofontgris.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="333.0" layoutY="285.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="234.0" text="Search series" />
+      <Button layoutX="333.0" layoutY="332.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="234.0" text="Consult List" />
+      <VBox prefHeight="500.0" prefWidth="248.0">
+         <children>
+            <ImageView fitHeight="162.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true" translateX="30.0" translateY="127.0">
+               <image>
+                  <Image url="C:\Users\hp\eclipse-workspace\Sahed\src\main\java\Image\username-icon-png-21.jpg" />
+               </image>
+            </ImageView>
+            <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="100.0" text="view Profile" translateX="54.0" translateY="172.0">
+               <font>
+                  <Font name="System Italic" size="12.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="100.0" text="Favorite series" translateX="54.0" translateY="193.0">
+               <font>
+                  <Font name="System Italic" size="12.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="100.0" text="Favorite actors" translateX="54.0" translateY="207.0">
+               <font>
+                  <Font name="System Italic" size="12.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+      <Button layoutX="333.0" layoutY="376.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="234.0" text="Consult the schedule of airing episodes of favorite series." />
+      <ImageView fitHeight="34.0" fitWidth="60.0" layoutX="820.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="48.0" fitWidth="60.0" layoutX="834.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="C:\Users\hp\eclipse-workspace\Sahed\src\main\java\Image\notificationiconfongris.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="830.0" layoutY="69.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="60.0" text="view notifications" />
+      <Separator layoutX="248.0" layoutY="-6.0" orientation="VERTICAL" prefHeight="500.0" />
+   </children>
+</AnchorPane>
