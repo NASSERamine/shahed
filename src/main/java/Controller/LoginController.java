@@ -38,7 +38,14 @@ public class LoginController  implements Initializable {
 
     @FXML
     private void switchToSecondary() throws IOException {
-        App.setRoot("SignUp");
+        //App.setRoot("SignUp");
+    	System.out.println("hello word");
+    }
+    
+    @FXML
+    private void switchToUserinterface() throws IOException {
+        //App.setRoot("SignUp");
+    	System.out.println("hello 2");
     }
 
 

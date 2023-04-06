@@ -12,7 +12,7 @@
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="900.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.LoginController">
    <children>
       <TextField layoutX="389.0" layoutY="250.0" prefHeight="25.0" prefWidth="278.0" promptText="User Name" />
-      <Button layoutX="484.0" layoutY="373.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="74.0" text="Login">
+      <Button layoutX="484.0" layoutY="373.0" mnemonicParsing="false" onAction="#switchToUserinterface" prefHeight="25.0" prefWidth="74.0" text="Login">
          <font>
             <Font name="System Italic" size="12.0" />
          </font>
@@ -27,7 +27,7 @@
          </children></VBox>
       <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="428.0" layoutY="71.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="C:\Users\hp\eclipse-workspace\Sahed\src\main\java\Image\337101180_1579935799173156_6933493579516351879_n.jpg" />
+            <Image url="C:\Users\hp\shahed\src\main\java\Image\logo.png" />
          </image>
       </ImageView>
       <Button layoutX="790.0" layoutY="47.0" mnemonicParsing="false" onAction="#switchToSecondary" prefHeight="25.0" prefWidth="74.0" text="Sign Up">
