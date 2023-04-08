@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane fx:id="anchor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ProfileUserController">
+   <children>
+      <ImageView fx:id="imageusericon" fitHeight="150.0" fitWidth="200.0" layoutX="338.0" layoutY="38.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="C:\Users\hp\shahed\src\main\java\Image\username-icon-png-21.jpg" />
+         </image>
+      </ImageView>
+      <Label fx:id="usernamelabel" layoutX="331.0" layoutY="233.0" prefHeight="31.0" prefWidth="203.0" text="user name" />
+      <Label fx:id="emaillabel" layoutX="331.0" layoutY="276.0" prefHeight="31.0" prefWidth="203.0" text="email" />
+      <Label fx:id="datelabel" layoutX="331.0" layoutY="313.0" prefHeight="31.0" prefWidth="203.0" text="date de naissance" />
+      <Label fx:id="passwordlabel" layoutX="331.0" layoutY="350.0" prefHeight="31.0" prefWidth="203.0" text="password" />
+      <Button fx:id="ruturnbutton" layoutX="778.0" layoutY="26.0" mnemonicParsing="false" onAction="#switchTouserInterface" prefHeight="31.0" prefWidth="73.0" text="ruturn" />
+      <Button fx:id="modifierbutton" layoutX="553.0" layoutY="396.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="120.0" text="modifier profile" />
+   </children>
+</AnchorPane>

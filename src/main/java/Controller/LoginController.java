@@ -1,57 +1,55 @@
 package Controller;
 
 import java.io.IOException;
-import java.net.URL;
-import java.util.ResourceBundle;
 
 import org.shahed.Sahed.App;
 
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.image.ImageView;
-import javafx.scene.layout.VBox;
 
-public class LoginController  implements Initializable {
-
-    @FXML
-    PasswordField passwrd = new PasswordField();
-    @FXML
-    TextField text2 = new TextField();
-    @FXML
-    ImageView img = new ImageView();
-    @FXML
-    ImageView img2 = new ImageView();
-    @FXML
-    ImageView img3 = new ImageView();
-    @FXML
-    ImageView img4 = new ImageView();
-    @FXML
-    Button btnsignUp = new Button();
-    @FXML
-    Button btn2 = new Button();
-    @FXML
-    VBox vbox = new VBox();
-    
+public class LoginController {
 
     @FXML
-    private void switchToSecondary() throws IOException {
-        //App.setRoot("SignUp");
-    	System.out.println("hello word");
-    }
-    
+    private ImageView image1;
+
     @FXML
-    private void switchToUserinterface() throws IOException {
-        //App.setRoot("SignUp");
-    	System.out.println("hello 2");
+    private ImageView lago;
+
+    @FXML
+    private Button loginbutton;
+
+    @FXML
+    private ImageView passwordicon;
+
+    @FXML
+    private PasswordField passwordtextf;
+
+    @FXML
+    private Button signupbutton;
+
+    @FXML
+    private ImageView usericon;
+
+    @FXML
+    private TextField usertextf;
+
+    @FXML
+    void switchToSecondary(ActionEvent event) throws IOException {
+    	App.setRoot("SignUp");
+
     }
 
+    @FXML
+    void switchTouserInterface(ActionEvent event) throws IOException {
+    	App.setRoot("MainUserInterface");
 
-	@Override
-	public void initialize(URL location, ResourceBundle resources) {
-		// TODO Auto-generated method stub
-		
-	}
+    }
+
 }
+
+
+

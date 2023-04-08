@@ -11,41 +11,41 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="900.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.LoginController">
    <children>
-      <TextField layoutX="389.0" layoutY="250.0" prefHeight="25.0" prefWidth="278.0" promptText="User Name" />
-      <Button layoutX="484.0" layoutY="373.0" mnemonicParsing="false" onAction="#switchToUserinterface" prefHeight="25.0" prefWidth="74.0" text="Login">
+      <TextField fx:id="usertextf" layoutX="389.0" layoutY="250.0" prefHeight="25.0" prefWidth="278.0" promptText="User Name" />
+      <Button fx:id="loginbutton" layoutX="484.0" layoutY="373.0" mnemonicParsing="false" onAction="#switchTouserInterface" prefHeight="25.0" prefWidth="74.0" text="Login">
          <font>
             <Font name="System Italic" size="12.0" />
          </font>
       </Button>
       <VBox prefHeight="500.0" prefWidth="300.0">
          <children>
-            <ImageView fitHeight="500.0" fitWidth="327.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="image1" fitHeight="500.0" fitWidth="327.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="C:\Users\hp\eclipse-workspace\Sahed\src\main\java\Image\Les-applications-pour-regarder-des-films-sur-iPhone (1).png" />
                </image>
             </ImageView>
          </children></VBox>
-      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="428.0" layoutY="71.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="lago" fitHeight="150.0" fitWidth="200.0" layoutX="428.0" layoutY="71.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="C:\Users\hp\shahed\src\main\java\Image\logo.png" />
          </image>
       </ImageView>
-      <Button layoutX="790.0" layoutY="47.0" mnemonicParsing="false" onAction="#switchToSecondary" prefHeight="25.0" prefWidth="74.0" text="Sign Up">
+      <Button fx:id="signupbutton" layoutX="790.0" layoutY="47.0" mnemonicParsing="false" onAction="#switchToSecondary" prefHeight="25.0" prefWidth="74.0" text="Sign Up">
          <font>
             <Font name="System Italic" size="12.0" />
          </font>
       </Button>
-      <ImageView fitHeight="32.0" fitWidth="38.0" layoutX="344.0" layoutY="247.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="usericon" fitHeight="32.0" fitWidth="38.0" layoutX="344.0" layoutY="247.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="C:\Users\hp\eclipse-workspace\Sahed\src\main\java\Image\username-icon-png-21.jpg" />
          </image>
       </ImageView>
-      <ImageView fitHeight="32.0" fitWidth="38.0" layoutX="346.0" layoutY="303.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="passwordicon" fitHeight="32.0" fitWidth="38.0" layoutX="346.0" layoutY="303.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="C:\Users\hp\eclipse-workspace\Sahed\src\main\java\Image\téléchargement.jpg" />
          </image>
       </ImageView>
-      <PasswordField layoutX="392.0" layoutY="307.0" prefHeight="25.0" prefWidth="278.0" promptText="Password">
+      <PasswordField fx:id="passwordtextf" layoutX="392.0" layoutY="307.0" prefHeight="25.0" prefWidth="278.0" promptText="Password">
          <font>
             <Font name="System Italic" size="12.0" />
          </font>

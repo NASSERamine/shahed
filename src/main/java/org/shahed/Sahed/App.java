@@ -39,24 +39,9 @@ public class App extends Application {
     }
 
     public static void main(String[] args) {
-    	try (Connection conn = Dbconnection.getConnection()) {
-    	    PreparedStatement pstmt = conn.prepareStatement("SELECT * FROM hr.employees");
-    	    ResultSet rs = pstmt.executeQuery();
-
-    	    while (rs.next()) {
-    	        int employeeId = rs.getInt("employee_id");
-    	        String firstName = rs.getString("first_name");
-    	        String lastName = rs.getString("last_name");
-    	        String email = rs.getString("email");
-    	        Date hireDate = rs.getDate("hire_date");
-    	        double salary = rs.getDouble("salary");
-
-    	        System.out.println(employeeId + " " + firstName + " " + lastName + " " + email + " " + hireDate + " " + salary);
-    	    }
-    	} catch (SQLException ex) {
-    	    ex.printStackTrace();
+    	
 
         launch();
 
-    	}}}
+    	}}
 
