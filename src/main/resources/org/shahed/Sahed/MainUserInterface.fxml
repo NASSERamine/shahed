@@ -43,12 +43,13 @@
       </VBox>
       <Button fx:id="consultshudule_button" layoutX="333.0" layoutY="376.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="234.0" text="Consult the schedule of airing episodes of favorite series." />
       <ImageView fitHeight="34.0" fitWidth="60.0" layoutX="820.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" />
-      <ImageView fx:id="notificon" fitHeight="48.0" fitWidth="60.0" layoutX="834.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="notificon" fitHeight="48.0" fitWidth="60.0" layoutX="774.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="C:\Users\hp\eclipse-workspace\Sahed\src\main\java\Image\notificationiconfongris.png" />
          </image>
       </ImageView>
-      <Button fx:id="viewnotif_button" layoutX="830.0" layoutY="69.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="60.0" text="view notifications" />
+      <Button fx:id="viewnotif_button" layoutX="770.0" layoutY="69.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="60.0" text="view notifications" />
       <Separator layoutX="248.0" layoutY="-6.0" orientation="VERTICAL" prefHeight="500.0" />
+      <Button fx:id="logoutbutton" layoutX="840.0" layoutY="26.0" mnemonicParsing="false" onAction="#switchToLoginterface" text="log out" />
    </children>
 </AnchorPane>

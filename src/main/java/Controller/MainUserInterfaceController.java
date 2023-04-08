@@ -44,10 +44,17 @@ public class MainUserInterfaceController {
 
     @FXML
     private Button viewprofile_button;
+    @FXML
+    private Button logoutbutton;
     
     @FXML
     void switchToProfileuserInterface(ActionEvent event) throws IOException {
     	App.setRoot("profileuser");
+
+    }
+    @FXML
+    void switchToLoginterface(ActionEvent event) throws IOException {
+    	App.setRoot("Login");
 
     }
 
