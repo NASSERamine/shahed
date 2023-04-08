@@ -1,20 +1,24 @@
 package Controller;
 
+import java.net.URL;
+import java.util.ResourceBundle;
+
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
+import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
 
-public class SignUpController {
+public class SignUpController implements Initializable {
 
     @FXML
     private AnchorPane anchor;
-
-    @FXML
-    private TextField cintextfield;
 
     @FXML
     private TextField emailtextfield;
@@ -41,6 +45,9 @@ public class SignUpController {
     private PasswordField passwordtextfield;
 
     @FXML
+    private ComboBox<String> rolebox;
+
+    @FXML
     private Button signupbuutn;
 
     @FXML
@@ -48,5 +55,11 @@ public class SignUpController {
 
     @FXML
     private TextField usertextfield;
+
+	@Override
+	public void initialize(URL location, ResourceBundle resources) {
+		ObservableList<String> list = FXCollections.observableArrayList("User","Acteur","Producteur");
+		rolebox.setItems(list);
+	}
 
 }
