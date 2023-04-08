@@ -11,7 +11,7 @@
    <children>
       <ImageView fx:id="imageusericon" fitHeight="150.0" fitWidth="200.0" layoutX="338.0" layoutY="38.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="C:\Users\hp\shahed\src\main\java\Image\username-icon-png-21.jpg" />
+            <Image url="@Image/username-icon-png-21.jpg" />
          </image>
       </ImageView>
       <Label fx:id="usernamelabel" layoutX="331.0" layoutY="233.0" prefHeight="31.0" prefWidth="203.0" text="user name" />
