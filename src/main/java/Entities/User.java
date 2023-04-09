@@ -5,20 +5,13 @@ import java.util.Date;
 
 
 public class User extends Visiteur {
-	
-	
-	private ArrayList<String> preference ;
 
-	public User(ArrayList<String> preference) {
+	public User(String nom, String email, java.sql.Date date_de_naissance) {
 		super();
-		this.preference = preference;
+		// TODO Auto-generated constructor stub
 	}
+	
+	
 
-	@Override
-	public String toString() {
-		return "User [preference=" + preference + ", nom=" + nom + ", email=" + email + ", Date_de_naissance="
-				+ Date_de_naissance + ", getClass()=" + getClass() + ", hashCode()=" + hashCode() + ", toString()="
-				+ super.toString() + "]";
-	}
 	
 }
