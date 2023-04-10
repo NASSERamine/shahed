@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="anchorpane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.AjouterserieController">
+   <children>
+      <TextField fx:id="namestext" layoutX="404.0" layoutY="189.0" prefHeight="25.0" prefWidth="224.0" promptText="Name" />
+      <TextField fx:id="idproducteurname" layoutX="404.0" layoutY="225.0" prefHeight="25.0" prefWidth="224.0" promptText="Id Prodecteur" />
+      <TextField fx:id="languagetext" layoutX="404.0" layoutY="298.0" prefHeight="25.0" prefWidth="224.0" promptText="Language" />
+      <ImageView fx:id="image" fitHeight="500.0" fitWidth="300.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Image/crop-hands-clapping-blank-clapperboard%20(1).png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="Synopsittext" layoutX="404.0" layoutY="335.0" prefHeight="25.0" prefWidth="224.0" promptText="Synoposis" />
+      <ComboBox fx:id="genrecombo" layoutX="404.0" layoutY="370.0" prefHeight="25.0" prefWidth="224.0" promptText="Genre" />
+      <Button fx:id="savebuttn" layoutX="477.0" layoutY="413.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="79.0" text="Save" />
+      <Button fx:id="ruturnbuttn" layoutX="792.0" layoutY="50.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="62.0" text="Ruturn" />
+      <Label fx:id="label1" layoutX="415.0" layoutY="82.0" prefHeight="66.0" prefWidth="224.0" text="Shahed For You">
+         <font>
+            <Font name="System Italic" size="29.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="datenox" layoutX="405.0" layoutY="264.0" prefHeight="25.0" prefWidth="224.0" promptText="Release date" />
+   </children>
+</AnchorPane>
