@@ -7,18 +7,21 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 import java.io.IOException;
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.util.Date;
 
-import Database.Dbconnection;
+import Controller.ActorController;
+import Controller.ProfileActorController;
+import Controller.UserController;
+import Dao.EpisodeDAO;
+import Dao.MediaDao;
+import Dao.NotificationDAO;
 
 /**
  * JavaFX App
  */
 public class App extends Application {
+	
+	
 
     private static Scene scene;
 
@@ -38,8 +41,8 @@ public class App extends Application {
         return fxmlLoader.load();
     }
 
-    public static void main(String[] args) {
-
+    public static void main(String[] args) throws SQLException {
+    	    	
         launch();
 
     	}}

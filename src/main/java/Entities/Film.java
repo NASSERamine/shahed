@@ -1,23 +1,39 @@
 package Entities;
 
-import java.sql.Date;
-
-import javax.swing.Icon;
-
 public class Film extends Media {
-public Film(String nom1, Date annne_sortie, String langue, String pays_origine, Icon affiche, String genre,
-			String relisateur) {
-		super(nom1, annne_sortie, langue, pays_origine, affiche, genre, relisateur);
-		// TODO Auto-generated constructor stub
+	
+	private String dure;
+
+	public Film(int id, String nom1, int annne_sortie, String langue, String pays_origine, String genre,
+			int id_producer, String urlaffiche, String synopsis, String type, int nbr_vu, int nbr_votant, String dure) {
+		super(id, nom1, annne_sortie, langue, pays_origine, genre, id_producer, urlaffiche, synopsis, type, nbr_vu,
+				nbr_votant);
+		this.dure = dure;
 	}
 
-private String duree;
+	public String getDure() {
+		return dure;
+	}
 
-public String getDuree() {
-	return duree;
-}
+	public void setDure(String dure) {
+		this.dure = dure;
+	}
 
-public void setDuree(String duree) {
-	this.duree = duree;
-}
+	
+
+	
+	
+
+	
+	
+
+	
+
+
+
+
+
+
+
+
 }

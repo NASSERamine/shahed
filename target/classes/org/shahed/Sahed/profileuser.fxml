@@ -1,24 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
-<AnchorPane fx:id="anchor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ProfileUserController">
+<AnchorPane fx:id="anchor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="900.0" style="-fx-background-color: #131313;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ProfileUserController">
    <children>
-      <ImageView fx:id="imageusericon" fitHeight="150.0" fitWidth="200.0" layoutX="338.0" layoutY="38.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="imageusericon" fitHeight="150.0" fitWidth="200.0" layoutX="369.0" layoutY="57.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@Image/username-icon-png-21.jpg" />
          </image>
       </ImageView>
-      <Label fx:id="usernamelabel" layoutX="331.0" layoutY="233.0" prefHeight="31.0" prefWidth="203.0" text="user name" />
-      <Label fx:id="emaillabel" layoutX="331.0" layoutY="276.0" prefHeight="31.0" prefWidth="203.0" text="email" />
-      <Label fx:id="datelabel" layoutX="331.0" layoutY="313.0" prefHeight="31.0" prefWidth="203.0" text="date de naissance" />
-      <Label fx:id="passwordlabel" layoutX="331.0" layoutY="350.0" prefHeight="31.0" prefWidth="203.0" text="password" />
-      <Button fx:id="ruturnbutton" layoutX="778.0" layoutY="26.0" mnemonicParsing="false" onAction="#switchTouserInterface" prefHeight="31.0" prefWidth="73.0" text="ruturn" />
-      <Button fx:id="modifierbutton" layoutX="553.0" layoutY="396.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="120.0" text="modifier profile" />
+      <Button fx:id="ruturnbutton" layoutX="778.0" layoutY="26.0" mnemonicParsing="false" onAction="#switchTouserInterface" prefHeight="31.0" prefWidth="73.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 50;" text="Ruturn" />
+      <Button fx:id="modifierbutton" layoutX="629.0" layoutY="413.0" mnemonicParsing="false" onAction="#modifier" prefHeight="25.0" prefWidth="120.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 50;" text="modifier profile" />
+      <ImageView fx:id="imageview" fitHeight="528.0" fitWidth="300.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Image/Capture.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="nametext" layoutX="342.0" layoutY="250.0" prefHeight="25.0" prefWidth="203.0" style="-fx-background-radius: 50;" />
+      <TextField fx:id="emailtext" layoutX="343.0" layoutY="291.0" prefHeight="25.0" prefWidth="203.0" style="-fx-background-radius: 50;" />
+      <TextField fx:id="datenaisstext" layoutX="342.0" layoutY="332.0" prefHeight="25.0" prefWidth="203.0" style="-fx-background-radius: 50;" />
+      <TextField fx:id="passwordtext" layoutX="343.0" layoutY="370.0" prefHeight="25.0" prefWidth="203.0" style="-fx-background-radius: 50;" />
    </children>
 </AnchorPane>

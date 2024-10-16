@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="borderpane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="900.0" styleClass="background-pane" stylesheets="@style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.AcceuilUserController">
+   <top>
+      <HBox fx:id="hbox1" prefHeight="53.0" prefWidth="900.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox fx:id="hboxentaite" prefHeight="100.0" prefWidth="271.0" translateX="103.0">
+               <children>
+                  <TextField fx:id="searchtext" prefHeight="25.0" prefWidth="184.0" promptText="Search" translateX="17.0" translateY="14.0" />
+                  <Button fx:id="recherchebuttn" mnemonicParsing="false" onAction="#handleSearchButtonAction" prefHeight="29.0" prefWidth="37.0" style="-fx-background-radius: 100; -fx-background-color: #FFFFFF;" translateX="17.0" translateY="12.0">
+                     <graphic>
+                        <ImageView fitHeight="25.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Image/rechercheicon.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </HBox>
+            <Button fx:id="notifbuttn" mnemonicParsing="false" onAction="#notif" prefHeight="29.0" prefWidth="37.0" style="-fx-background-radius: 100; -fx-background-color: #FFFFFF;" translateX="550.0" translateY="9.0">
+               <graphic>
+                  <ImageView fitHeight="26.0" fitWidth="54.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Image/notificationicon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <ImageView fitHeight="64.0" fitWidth="109.0" pickOnBounds="true" preserveRatio="true" translateX="-312.0">
+               <image>
+                  <Image url="@Image/logocineb-removebg-preview.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </HBox>
+   </top>
+   <left>
+      <VBox fx:id="vbox1" prefHeight="383.0" prefWidth="114.0" style="-fx-background-color: #131313;" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="acceuilbuttn" mnemonicParsing="false" style="-fx-background-radius: 50;" text="Acceuil" translateX="17.0" translateY="13.0">
+               <graphic>
+                  <ImageView fx:id="acceuilimage" fitHeight="28.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Image/acceiliconicon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="profilebuttn" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#switchToProfile" style="-fx-background-radius: 50;" text="Profile" translateX="18.0" translateY="30.0">
+               <graphic>
+                  <ImageView fx:id="profileimage" fitHeight="28.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Image/username-icon-png-21.jpg" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Separator fx:id="separator1" prefHeight="6.0" prefWidth="114.0" style="-fx-background-color: #FFFFFF;" translateY="55.0" />
+            <Label fx:id="favoritelabel" prefHeight="24.0" prefWidth="87.0" text="Favorites" textFill="WHITE" translateX="21.0" translateY="72.0">
+               <font>
+                  <Font name="Bodoni MT" size="18.0" />
+               </font>
+            </Label>
+            <Button fx:id="favoriteactorbuttn" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="74.0" style="-fx-background-radius: 50;" text="Actor" translateX="16.0" translateY="82.0">
+               <graphic>
+                  <ImageView fx:id="actorimage" fitHeight="28.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Image/username-icon-png-21.jpg" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="favoritegenrebuttn" layoutX="10.0" layoutY="98.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="77.0" style="-fx-background-radius: 50;" text="Genre" translateX="15.0" translateY="97.0">
+               <graphic>
+                  <ImageView fx:id="favoritegenreimage" fitHeight="28.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Image/serieicon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="morebuttn" layoutX="10.0" layoutY="127.0" mnemonicParsing="false" onAction="#rechercheavance" prefHeight="31.0" prefWidth="82.0" style="-fx-background-radius: 50;" text="More" translateX="14.0" translateY="118.0">
+               <graphic>
+                  <ImageView fx:id="morelist" fitHeight="28.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Image/listicon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="logoutbuttn" layoutX="10.0" layoutY="156.0" mnemonicParsing="false" onAction="#Logout" prefHeight="31.0" prefWidth="82.0" style="-fx-background-radius: 50;" text="Log out" translateX="11.0" translateY="136.0">
+               <graphic>
+                  <ImageView fx:id="logoutimage" fitHeight="28.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Image/logouticon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <VBox fx:id="vboxmain" prefHeight="200.0" prefWidth="100.0" stylesheets="@style.css" BorderPane.alignment="CENTER">
+         <children>
+            <ScrollPane fx:id="scrollpane" prefHeight="200.0" prefWidth="200.0">
+               <content>
+                  <HBox fx:id="hboxcross" prefHeight="182.0" prefWidth="785.0" style="-fx-background-color: #000000;">
+                     <children>
+                        <ImageView fitHeight="179.0" fitWidth="133.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Image/film2.jpg" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="179.0" fitWidth="137.0" pickOnBounds="true" preserveRatio="true" translateX="22.0">
+                           <image>
+                              <Image url="@Image/film3.jpg" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="179.0" fitWidth="137.0" layoutX="143.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" translateX="37.0">
+                           <image>
+                              <Image url="@Image/film4.jpg" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="179.0" fitWidth="137.0" layoutX="276.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" translateX="54.0">
+                           <image>
+                              <Image url="@Image/film5.jpg" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="179.0" fitWidth="137.0" layoutX="397.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" translateX="78.0">
+                           <image>
+                              <Image url="@Image/film9.jpg" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </HBox>
+               </content>
+            </ScrollPane>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>

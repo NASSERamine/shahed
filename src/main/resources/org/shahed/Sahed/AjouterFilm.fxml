@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorpane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="900.0" style="-fx-background-color: #D29A01;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.AjouterFilmController">
+   <children>
+      <TextField fx:id="namestext" layoutX="405.0" layoutY="151.0" prefHeight="25.0" prefWidth="224.0" promptText="Name" />
+      <TextField fx:id="languagetext" layoutX="405.0" layoutY="225.0" prefHeight="25.0" prefWidth="224.0" promptText="Language" />
+      <ImageView fx:id="image" fitHeight="500.0" fitWidth="300.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Image/crop-hands-clapping-blank-clapperboard%20(1).png" />
+         </image>
+      </ImageView>
+      <Button fx:id="savebuttn" layoutX="467.0" layoutY="454.0" mnemonicParsing="false" onAction="#hundelsavebuttn" prefHeight="25.0" prefWidth="79.0" text="Save" />
+      <Button fx:id="ruturnbuttn" layoutX="792.0" layoutY="50.0" mnemonicParsing="false" onAction="#switchToProfile" prefHeight="25.0" prefWidth="62.0" text="Ruturn" />
+      <Label fx:id="label1" layoutX="405.0" layoutY="28.0" prefHeight="66.0" prefWidth="224.0" text="Cine_b">
+         <font>
+            <Font name="Blackadder ITC" size="57.0" />
+         </font>
+      </Label>
+      <TextField fx:id="annedesortietext" layoutX="405.0" layoutY="185.0" prefHeight="25.0" prefWidth="224.0" promptText="annee sortie" />
+      <TextField fx:id="countrytext" layoutX="405.0" layoutY="267.0" prefHeight="25.0" prefWidth="224.0" promptText="Country" />
+      <ComboBox fx:id="genrecombo" layoutX="405.0" layoutY="414.0" prefHeight="25.0" prefWidth="224.0" promptText="Genre" />
+      <TextField fx:id="Synopsittext1" layoutX="405.0" layoutY="338.0" prefHeight="25.0" prefWidth="224.0" promptText="Synoposis" />
+      <TextField fx:id="imageurltext" layoutX="403.0" layoutY="372.0" prefHeight="25.0" prefWidth="224.0" promptText="image url" />
+      <TextField fx:id="duretext" layoutX="405.0" layoutY="302.0" prefHeight="25.0" prefWidth="224.0" promptText="Duré" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorpane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="900.0" style="-fx-background-color: #D29A01;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.AjouterEpisodeController">
+   <children>
+      <TextField fx:id="numerotext" layoutX="405.0" layoutY="225.0" prefHeight="25.0" prefWidth="224.0" promptText="numero" />
+      <TextField fx:id="titletext" layoutX="405.0" layoutY="310.0" prefHeight="25.0" prefWidth="224.0" promptText="Title" />
+      <ImageView fx:id="image" fitHeight="500.0" fitWidth="300.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Image/crop-hands-clapping-blank-clapperboard%20(1).png" />
+         </image>
+      </ImageView>
+      <Button fx:id="savebuttn" layoutX="478.0" layoutY="400.0" mnemonicParsing="false" onAction="#hundelsavebuttn" prefHeight="25.0" prefWidth="79.0" style="-fx-background-radius: 100;" text="Save" />
+      <Button fx:id="ruturnbuttn" layoutX="809.0" layoutY="38.0" mnemonicParsing="false" onAction="#ruturn" prefHeight="25.0" prefWidth="62.0" style="-fx-background-radius: 100;" text="Ruturn" />
+      <Label fx:id="label1" layoutX="405.0" layoutY="28.0" prefHeight="66.0" prefWidth="224.0" text="Cine_b">
+         <font>
+            <Font name="Blackadder ITC" size="57.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="airdate" layoutX="405.0" layoutY="267.0" prefHeight="25.0" prefWidth="224.0" promptText="airdate" />
+      <TextField fx:id="synopsistext" layoutX="405.0" layoutY="353.0" prefHeight="25.0" prefWidth="224.0" promptText="synopsistext" />
+      <ComboBox fx:id="seasonnumber" layoutX="405.0" layoutY="177.0" prefHeight="25.0" prefWidth="224.0" promptText="Season" />
+   </children>
+</AnchorPane>

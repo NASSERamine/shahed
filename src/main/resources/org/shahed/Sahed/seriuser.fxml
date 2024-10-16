@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="900.0" styleClass="background-pane" stylesheets="@style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.SeriuserController">
+   <children>
+      <ImageView fx:id="image" fitHeight="500.0" fitWidth="296.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Image/lacasa.png" />
+         </image></ImageView>
+      <TextField fx:id="name" layoutX="306.0" layoutY="16.0" prefHeight="61.0" prefWidth="351.0" styleClass="transparent-textfield">
+         <font>
+            <Font name="Arabic Typesetting" size="39.0" />
+         </font>
+      </TextField>
+      <Separator layoutX="294.0" orientation="VERTICAL" prefHeight="500.0" prefWidth="6.0" />
+      <TextField fx:id="idtext" layoutX="319.0" layoutY="90.0" prefHeight="25.0" prefWidth="201.0" promptText="id">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+         <styleClass>
+            <String fx:value="transparent-textfield" />
+            <String fx:value="text-white-placeholder" />
+         </styleClass></TextField>
+      <TextField fx:id="yeartext" layoutX="319.0" layoutY="121.0" prefHeight="25.0" prefWidth="201.0" promptText="year">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <styleClass>
+            <String fx:value="transparent-textfield" />
+            <String fx:value="my-textfield" />
+         </styleClass></TextField>
+      <TextField fx:id="languagetext" layoutX="319.0" layoutY="154.0" prefHeight="25.0" prefWidth="201.0" promptText="Language">
+         <styleClass>
+            <String fx:value="transparent-textfield" />
+            <String fx:value="my-textfield" />
+         </styleClass></TextField>
+      <TextField fx:id="countrytext" layoutX="319.0" layoutY="187.0" prefHeight="25.0" prefWidth="201.0" promptText="Country">
+         <styleClass>
+            <String fx:value="transparent-textfield" />
+            <String fx:value="my-textfield" />
+         </styleClass></TextField>
+      <TextField fx:id="producerid" layoutX="319.0" layoutY="222.0" prefHeight="25.0" prefWidth="201.0" promptText="Producer_ID" styleClass="transparent-textfield">
+         <font>
+            <Font size="15.0" />
+         </font></TextField>
+      <TextField fx:id="Synopsistext" layoutX="319.0" layoutY="259.0" prefHeight="25.0" prefWidth="201.0" promptText="Synopsis" styleClass="transparent-textfield">
+         <font>
+            <Font size="15.0" />
+         </font></TextField>
+      <TextField fx:id="vuestext" layoutX="319.0" layoutY="294.0" prefHeight="25.0" prefWidth="193.0" promptText="Nbre_Vu" styleClass="transparent-textfield">
+         <font>
+            <Font size="15.0" />
+         </font></TextField>
+      <TextField fx:id="nbrvottanttext" layoutX="319.0" layoutY="332.0" prefHeight="25.0" prefWidth="201.0" promptText="Nbre_Vottant" styleClass="transparent-textfield" />
+      <Button fx:id="rutrnbuttn" layoutX="786.0" layoutY="30.0" mnemonicParsing="false" onAction="#ruturn" prefHeight="25.0" prefWidth="100.0" style="-fx-background-radius: 50;" text="Return" />
+      <TextField fx:id="nbrsaisontext" layoutX="319.0" layoutY="371.0" prefHeight="25.0" prefWidth="201.0" promptText="nbre_saison" styleClass="transparent-textfield">
+         <font>
+            <Font size="15.0" />
+         </font></TextField>
+      <TextField fx:id="dure" layoutX="319.0" layoutY="406.0" prefHeight="25.0" prefWidth="201.0" promptText="duré" styleClass="transparent-textfield">
+         <font>
+            <Font size="15.0" />
+         </font></TextField>
+      <Button fx:id="playbuttn" layoutX="732.0" layoutY="26.0" mnemonicParsing="false" onAction="#show" prefHeight="34.0" prefWidth="28.0" style="-fx-background-radius: 100;">
+         <graphic>
+            <ImageView fitHeight="26.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Image/playicon.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="morebuttn" layoutX="786.0" layoutY="437.0" mnemonicParsing="false" onAction="#more" prefHeight="25.0" prefWidth="62.0" style="-fx-background-radius: 100;" text="More" />
+   </children>
+</AnchorPane>

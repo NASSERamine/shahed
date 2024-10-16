@@ -31,30 +31,26 @@ public class MainUserInterfaceController {
     private ImageView logo;
 
     @FXML
-    private ImageView notificon;
+    private Button logoutbutton;
 
     @FXML
     private Button searchseries_button;
-
-    @FXML
-    private ImageView usericon;
 
     @FXML
     private Button viewnotif_button;
 
     @FXML
     private Button viewprofile_button;
+
     @FXML
-    private Button logoutbutton;
-    
-    @FXML
-    void switchToProfileuserInterface(ActionEvent event) throws IOException {
-    	App.setRoot("profileuser");
+    void switchToLoginInterface(ActionEvent event) throws IOException {
+    	App.setRoot("Login");
 
     }
+
+
     @FXML
-    void switchToLoginterface(ActionEvent event) throws IOException {
-    	App.setRoot("Login");
+    void switchToProfileuserInterface(ActionEvent event) {
 
     }
 

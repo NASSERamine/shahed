@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="900.0" styleClass="background-pane" stylesheets="@style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.MoreuserSeriController">
+   <children>
+      <Label fx:id="namelabel" layoutX="183.0" layoutY="50.0" prefHeight="44.0" prefWidth="278.0" textFill="WHITE">
+         <font>
+            <Font name="Arabic Typesetting" size="30.0" />
+         </font>
+      </Label>
+      <Label fx:id="label1" layoutX="60.0" layoutY="181.0" prefHeight="44.0" prefWidth="132.0" text="Raiting :" textFill="WHITE">
+         <font>
+            <Font name="Arabic Typesetting" size="25.0" />
+         </font>
+      </Label>
+      <TextField fx:id="notetext" layoutX="192.0" layoutY="190.0" prefHeight="25.0" prefWidth="73.0" />
+      <Label fx:id="label2" layoutX="60.0" layoutY="250.0" prefHeight="44.0" prefWidth="95.0" text="Comment :" textFill="WHITE">
+         <font>
+            <Font name="Arabic Typesetting" size="25.0" />
+         </font>
+      </Label>
+      <TextField fx:id="commenttext" layoutX="192.0" layoutY="250.0" prefHeight="44.0" prefWidth="468.0" />
+      <ComboBox fx:id="seasonbox" layoutX="543.0" layoutY="47.0" onAction="#handleLseasonButtonAction" prefHeight="25.0" prefWidth="203.0" promptText="Season" />
+      <Button fx:id="saveraiting" layoutX="290.0" layoutY="190.0" mnemonicParsing="false" onAction="#saveraiting" style="-fx-background-radius: 100;" text="Save" />
+      <Button fx:id="savecomment" layoutX="683.0" layoutY="260.0" mnemonicParsing="false" onAction="#savecomment" style="-fx-background-radius: 100;" text="Save" />
+      <Button fx:id="returnbuttn" layoutX="776.0" layoutY="44.0" mnemonicParsing="false" onAction="#ruturn" prefHeight="25.0" prefWidth="83.0" style="-fx-background-radius: 100;" text="Return" />
+      <Button fx:id="updateraiting" layoutX="341.0" layoutY="190.0" mnemonicParsing="false" onAction="#updateraiting" style="-fx-background-radius: 100;" text="Update" />
+   </children>
+</AnchorPane>

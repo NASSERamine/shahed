@@ -34,14 +34,14 @@
          </font>
       </TextField>
       <TextField fx:id="emailtextfield" layoutX="488.0" layoutY="221.0" prefHeight="25.0" prefWidth="208.0" promptText="Email" style="-fx-background-color: #EEEEEE;" />
-      <Button fx:id="signupbuutn" layoutX="552.0" layoutY="432.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="78.0" text="Sign Up" />
+      <Button fx:id="signupbuutn" layoutX="541.0" layoutY="415.0" mnemonicParsing="false" onAction="#handlSignupButtonAction" prefHeight="25.0" prefWidth="78.0" text="Sign Up" />
       <Button fx:id="loginbutton" layoutX="766.0" layoutY="51.0" mnemonicParsing="false" onAction="#switchToLoginInterface" prefHeight="25.0" prefWidth="78.0" text="Login" />
       <ImageView fx:id="usericon" fitHeight="35.0" fitWidth="39.0" layoutX="433.0" layoutY="157.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@Image/username-icon-png-21.jpg" />
          </image>
       </ImageView>
-      <ImageView fx:id="passwordicon" fitHeight="35.0" fitWidth="39.0" layoutX="439.0" layoutY="344.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="passwordicon" fitHeight="35.0" fitWidth="39.0" layoutX="439.0" layoutY="357.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@Image/passwordicon.jpg" />
          </image>
@@ -56,18 +56,12 @@
             <Image url="@Image/username-icon-png-21.jpg" />
          </image>
       </ImageView>
-      <PasswordField fx:id="passwordtextfield" layoutX="488.0" layoutY="349.0" prefHeight="25.0" prefWidth="208.0" style="-fx-background-color: #EEEEEE;" />
+      <PasswordField fx:id="passwordtextfield" layoutX="488.0" layoutY="362.0" prefHeight="25.0" prefWidth="208.0" style="-fx-background-color: #EEEEEE;" />
       <ComboBox fx:id="rolebox" layoutX="488.0" layoutY="262.0" prefHeight="25.0" prefWidth="208.0" promptText="Role" style="-fx-background-color: #EEEEEE;" />
       <DatePicker fx:id="datefield" layoutX="487.0" layoutY="309.0" prefHeight="25.0" prefWidth="208.0" promptText="Date of birth" style="-fx-background-color: #EEEEEE;" />
       <ImageView fx:id="dateiconimage" fitHeight="33.0" fitWidth="30.0" layoutX="439.0" layoutY="305.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@Image/dateicon.png" />
-         </image>
-      </ImageView>
-      <TextField fx:id="cintext" layoutX="488.0" layoutY="389.0" prefHeight="25.0" prefWidth="208.0" promptText="CIN" style="-fx-background-color: #EEEEEE;" />
-      <ImageView fx:id="cinicon" fitHeight="35.0" fitWidth="39.0" layoutX="435.0" layoutY="387.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@Image/cinicon.png" />
          </image>
       </ImageView>
    </children>

@@ -1,0 +1,22 @@
+  .background-pane {
+    -fx-background-image: url("Image/backgroundjdid.jpg");
+    -fx-background-size: cover;
+    -fx-background-repeat: no-repeat;
+    
+}
+.transparent-textfield {
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+
+.transparent-listview{
+-fx-background-color: transparent;
+-fx-text-fill: white;
+-fx-font-weight: bold;
+-fx-border-color: white;
+-fx-border-width: 2px;
+}
+
+
